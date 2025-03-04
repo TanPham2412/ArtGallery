@@ -191,3 +191,65 @@ body{
 .swiper-button-next {
     right: 20px;
 }
+
+/* Tags container */
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 12px; /* Giảm khoảng cách giữa các tag */
+    flex-wrap: nowrap; /* Ngăn không cho wrap xuống dòng */
+    margin-top: 30px;
+    width: 100%;
+    overflow-x: auto; /* Cho phép scroll ngang nếu không đủ chỗ */
+    padding: 10px 0; /* Thêm padding để thanh scroll không che mất nội dung */
+}
+
+/* Tag items chung */
+.tag-items {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px; /* Giảm padding để tag nhỏ hơn */
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+    transition: all 0.2s ease;
+    white-space: nowrap; /* Ngăn text wrap xuống dòng */
+    flex-shrink: 0; /* Ngăn các tag bị co lại */
+}
+
+/* Ẩn thanh scrollbar nhưng vẫn cho phép scroll */
+.tag::-webkit-scrollbar {
+    display: none;
+}
+
+.tag {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Màu riêng cho từng tag */
+.tag-items.illustration {
+    background-color: #8CB4C5;
+}
+
+.tag-items.concept {
+    background-color: #8BC34A;
+}
+
+.tag-items.anime {
+    background-color: #CE93D8;
+}
+
+.tag-items.pixel {
+    background-color: #E091B1;
+}
+
+.tag-items.vector {
+    background-color: #7986CB;
+}
+
+.tag-items.lowpoly {
+    background-color: #81C784;
+}
