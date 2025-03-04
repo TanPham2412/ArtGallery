@@ -1,0 +1,193 @@
+body{
+    background-color: #f8f9fa;
+    font-family: Arial, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 8px 16px;
+    height: 56px;
+}
+
+/* Logo */
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3da0e1;
+}
+
+.logo-highlight {
+    color: #70a8d2;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Search box */
+.search-box {
+    margin-right: auto; /* Đẩy search box về bên trái */
+    margin-left: 24px; /* Khoảng cách với logo */
+    margin-right: 24px;
+}
+
+.search-box input {
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+/* Upload button */
+.btn-primary {
+    width: 200px;
+    height: 40px;
+    background-color: #0096fa;
+    border: none;
+    border-radius: 500px;
+    padding: 8px 16px;
+    margin-right: 24px; /* Khoảng cách đều với các icon */
+    margin-left: 24px; /* Khoảng cách với search box */
+}
+
+/* Nav icons container */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 24px; /* Khoảng cách đều giữa các icon */
+    margin-right: 24px; /* Khoảng cách với grid menu */
+}
+
+/* Icon links */
+.icon-link {
+    color: #777;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Grid menu icon */
+.grid-menu {
+    margin-left: 24px; /* Khoảng cách với nav icons */
+}
+
+/* User avatar */
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+/* swiper */
+.swiper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px; /* Giảm padding container */
+}
+
+/* Slide */
+.swiper-slide {
+    width: calc((100% - 20px) / 3); /* Giảm khoảng cách giữa slides */
+    height: auto;
+    padding: 0 5px; /* Giảm padding của slide */
+}
+
+/* Work card */
+.work-card {
+    width: 100%;
+    max-width: 380px; /* Tăng kích thước tối đa của card */
+    margin: 0 auto; /* Căn giữa card */
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Card image */
+.card-img-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* Giữ tỷ lệ 4:3 */
+}
+
+.card-img-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    /* Thiết lập kích thước và hình dạng cơ bản */
+    width: 50px;
+    height: 50px;
+    background: rgba(128, 128, 128, 0.5);
+    border-radius: 50%;
+    
+    /* Đảm bảo vị trí tuyệt đối */
+    position: absolute;
+    top: 50%;
+    transform: translateY(0%);
+    
+    /* Ẩn mặc định */
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+    /* Đảm bảo nút luôn tròn */
+    box-sizing: border-box;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+/* Xóa mũi tên mặc định */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+/* Tạo mũi tên custom */
+.swiper-button-next::before,
+.swiper-button-prev::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-right: 4px solid rgba(255, 255, 255, 0.8);
+    border-top: 4px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Xoay mũi tên */
+.swiper-button-next::before {
+    transform: translate(-60%, -50%) rotate(45deg);
+}
+
+.swiper-button-prev::before {
+    transform: translate(-40%, -50%) rotate(-135deg);
+}
+
+/* Hiện nút khi hover */
+.swiper:hover .swiper-button-next,
+.swiper:hover .swiper-button-prev {
+    opacity: 1;
+}
+
+/* Vị trí nút */
+.swiper-button-prev {
+    left: 20px;
+}
+
+.swiper-button-next {
+    right: 20px;
+}
