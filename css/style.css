@@ -361,3 +361,160 @@ body{
     font-size: 12px;
     color: #666;
 }
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 0 30px;
+    margin-top: 200px;
+}
+
+/* Footer Brand */
+.footer-brand {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    width: 90px;
+    height: 90px;
+}
+
+.web-name {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+    color: #fff;
+}
+
+/* footer title */
+.footer-title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Footer links */
+.footer-links{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* Social links */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.social-link:hover {
+    opacity: 0.8;
+}
+
+.social-link.facebook {
+    background: #1877f2;
+}
+
+.social-link.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.social-link.youtube {
+    background: #ff0000;
+}
+
+.social-link.tiktok {
+    background: #000;
+}
+
+/* Contact info */
+.footer-contact {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #999;
+    font-size: 14px;
+}
+
+.contact-item i {
+    color: #ff4b2b;
+}
+
+/* Certifications */
+.certifications {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cert-img {
+    height: 40px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.cert-img:hover {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .footer-logo, .footer-title {
+        text-align: center;
+    }
+    
+    .footer-links {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .social-links {
+        align-items: center;
+    }
+    
+    .contact-item {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
