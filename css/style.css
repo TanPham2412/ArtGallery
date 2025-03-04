@@ -362,6 +362,22 @@ body{
     color: #666;
 }
 
+/* Xoa dau gach chan vi gan linklink*/
+.art-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.art-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.art-link:hover .img-title {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Footer */
 .footer {
     background-color: #000;
