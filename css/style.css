@@ -25,8 +25,7 @@ body{
 
 /* Search box */
 .search-box {
-    margin-right: auto; /* Đẩy search box về bên trái */
-    margin-left: 24px; /* Khoảng cách với logo */
+    margin-left: 24px;
     margin-right: 24px;
 }
 
@@ -199,7 +198,7 @@ body{
     align-items: center; /* Căn giữa theo chiều dọc */
     gap: 12px; /* Giảm khoảng cách giữa các tag */
     flex-wrap: nowrap; /* Ngăn không cho wrap xuống dòng */
-    margin-top: 30px;
+    margin-top: 60px;
     width: 100%;
     overflow-x: auto; /* Cho phép scroll ngang nếu không đủ chỗ */
     padding: 10px 0; /* Thêm padding để thanh scroll không che mất nội dung */

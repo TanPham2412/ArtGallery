@@ -15,10 +15,10 @@
 </head>
 <body>
     <!-- Navbar: Điều hướng -->
-    <nav class="navbar navbar-expand-lg fixed-top bg-white">
+    <nav class="navbar fixed-top bg-white">
         <div class="container-fluid">
-            <button class="navbar-togger border-0">
-                <i class="fas fa-bars"></i> <!--Tao ra nut 3 gach -->
+            <button class="navbar-toggler border-0" type="button">
+                <i class="fas fa-bars"></i>
             </button>
             
             <a class="navbar-brand ms-2" href="#">
@@ -57,9 +57,9 @@
     <div class="container mt-5 pt-5">
         <!-- Swiper -->
         <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper"> <!-- Chứa các slide bên trong, giúp SwiperJS nhận diện và xử lý hiệu ứng trượt. -->
                 <!-- Slide 1 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide"> <!-- Xác định một slide trong swiper-wrapper, giúp SwiperJS hiểu và xử lý hiệu ứng trượt. -->
                     <div class="work-card">
                         <div class="card-img-wrapper">
                             <img src="/images/introduce/amano2.jpg" alt="Art1">
@@ -123,7 +123,7 @@
          </div>
 
         <!-- Recommended -->
-         <div class="recommended-pics mt-5">
+         <div class="recommended-pics">
             <h3 class="section-title mb-4">Được đề xuất</h3>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
                 <!-- Item1 -->
@@ -450,8 +450,8 @@
 
                 <!-- Social -->
                 <div class="col-md-3">
-                    <div class="social-links mt-4">
-                        <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i> Like on Facebook</a>
+                    <div class="social-links">
+                        <a href="http://facebook.com/minhtan.pham.127201/" class="social-link facebook"><i class="fab fa-facebook-f"></i> Like on Facebook</a>
                         <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i> Follow on Instagram</a>
                         <a href="#" class="social-link youtube"><i class="fab fa-youtube"></i> Subscribe on Youtube</a>
                         <a href="#" class="social-link tiktok"><i class="fab fa-tiktok"></i> Follow on Tiktok</a>
